@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE0861B1244B0C5C009C046B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0861B0244B0C5C009C046B /* AppDelegate.swift */; };
+		AE0861B3244B0C5C009C046B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0861B2244B0C5C009C046B /* SceneDelegate.swift */; };
+		AE0861B8244B0C5C009C046B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0861B6244B0C5C009C046B /* Main.storyboard */; };
+		AE0861BA244B0C5C009C046B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0861B9244B0C5C009C046B /* Assets.xcassets */; };
+		AE0861BD244B0C5D009C046B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0861BB244B0C5D009C046B /* LaunchScreen.storyboard */; };
+		AE0861C8244B0C5D009C046B /* RPG_UltimateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0861C7244B0C5D009C046B /* RPG_UltimateTests.swift */; };
+		AE0861D3244B0C5D009C046B /* RPG_UltimateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0861D2244B0C5D009C046B /* RPG_UltimateUITests.swift */; };
+		AE19291D2482539A00A3866B /* bruitWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE19291C2482539A00A3866B /* bruitWin.mp3 */; };
+		AE19291F2482556D00A3866B /* bruitHache.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE19291E2482556D00A3866B /* bruitHache.mp3 */; };
+		AE19292124825D5900A3866B /* bruitBegin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE19292024825D5900A3866B /* bruitBegin.mp3 */; };
+		AE1A8ACC24815C9D0074A677 /* audio-main.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE1A8AC924815C9D0074A677 /* audio-main.mp3 */; };
+		AE1A8ACD24815C9D0074A677 /* coup-depee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE1A8ACA24815C9D0074A677 /* coup-depee.mp3 */; };
+		AE1A8ACE24815C9D0074A677 /* bruitage-claque.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE1A8ACB24815C9D0074A677 /* bruitage-claque.mp3 */; };
+		AE1A8AD024815F090074A677 /* bruitFleche.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE1A8ACF24815F090074A677 /* bruitFleche.mp3 */; };
+		AE1A8AD22481620C0074A677 /* bruitAmelioration.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE1A8AD12481620C0074A677 /* bruitAmelioration.mp3 */; };
+		AE1A8AD42481677E0074A677 /* audio-selectCharacter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE1A8AD32481677E0074A677 /* audio-selectCharacter.mp3 */; };
+		AE3941F324582DEA00D9F1A9 /* optionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3941F224582DEA00D9F1A9 /* optionScreen.swift */; };
+		AE6688A52482623200B821F7 /* bruitSpecial.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE6688A42482623200B821F7 /* bruitSpecial.mp3 */; };
+		AE884D0D2461531B0005F62C /* selectCharacterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE884D0C2461531B0005F62C /* selectCharacterScreen.swift */; };
+		AE884D0F2462D8AA0005F62C /* playScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE884D0E2462D8AA0005F62C /* playScreen.swift */; };
+		AE884D132466BCDE0005F62C /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE884D122466BCDE0005F62C /* AppUtility.swift */; };
+		AEC02D9F2482D6EA00B48B14 /* bruitReady.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEC02D9E2482D6E900B48B14 /* bruitReady.mp3 */; };
+		AEEF8A4B2457264600E27349 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF8A4A2457264600E27349 /* Character.swift */; };
+		AEEF8A5724576D6300E27349 /* mainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF8A5624576D6300E27349 /* mainScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE0861C4244B0C5D009C046B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0861A5244B0C5B009C046B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0861AC244B0C5C009C046B;
+			remoteInfo = "RPG-Ultimate";
+		};
+		AE0861CF244B0C5D009C046B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0861A5244B0C5B009C046B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0861AC244B0C5C009C046B;
+			remoteInfo = "RPG-Ultimate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE0861AD244B0C5C009C046B /* RPG-Ultimate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPG-Ultimate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0861B0244B0C5C009C046B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE0861B2244B0C5C009C046B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE0861B7244B0C5C009C046B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE0861B9244B0C5C009C046B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0861BC244B0C5D009C046B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE0861BE244B0C5D009C046B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0861C3244B0C5D009C046B /* RPG-UltimateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPG-UltimateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0861C7244B0C5D009C046B /* RPG_UltimateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPG_UltimateTests.swift; sourceTree = "<group>"; };
+		AE0861C9244B0C5D009C046B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0861CE244B0C5D009C046B /* RPG-UltimateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPG-UltimateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0861D2244B0C5D009C046B /* RPG_UltimateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPG_UltimateUITests.swift; sourceTree = "<group>"; };
+		AE0861D4244B0C5D009C046B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE19291C2482539A00A3866B /* bruitWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bruitWin.mp3; path = "../../Musique RPG-Ultimate/bruitWin.mp3"; sourceTree = "<group>"; };
+		AE19291E2482556D00A3866B /* bruitHache.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bruitHache.mp3; path = "../../Musique RPG-Ultimate/bruitHache.mp3"; sourceTree = "<group>"; };
+		AE19292024825D5900A3866B /* bruitBegin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bruitBegin.mp3; path = "../../Musique RPG-Ultimate/bruitBegin.mp3"; sourceTree = "<group>"; };
+		AE1A8AC924815C9D0074A677 /* audio-main.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "audio-main.mp3"; path = "RPG-Ultimate.xcodeproj/audio-main.mp3"; sourceTree = SOURCE_ROOT; };
+		AE1A8ACA24815C9D0074A677 /* coup-depee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "coup-depee.mp3"; path = "../../Musique RPG-Ultimate/coup-depee.mp3"; sourceTree = "<group>"; };
+		AE1A8ACB24815C9D0074A677 /* bruitage-claque.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bruitage-claque.mp3"; path = "RPG-Ultimate.xcodeproj/bruitage-claque.mp3"; sourceTree = SOURCE_ROOT; };
+		AE1A8ACF24815F090074A677 /* bruitFleche.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bruitFleche.mp3; path = "../../Musique RPG-Ultimate/bruitFleche.mp3"; sourceTree = "<group>"; };
+		AE1A8AD12481620C0074A677 /* bruitAmelioration.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bruitAmelioration.mp3; path = "../../Musique RPG-Ultimate/bruitAmelioration.mp3"; sourceTree = "<group>"; };
+		AE1A8AD32481677E0074A677 /* audio-selectCharacter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "audio-selectCharacter.mp3"; path = "../../Musique RPG-Ultimate/audio-selectCharacter.mp3"; sourceTree = "<group>"; };
+		AE3941F224582DEA00D9F1A9 /* optionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionScreen.swift; sourceTree = "<group>"; };
+		AE6688A42482623200B821F7 /* bruitSpecial.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bruitSpecial.mp3; path = "../../Musique RPG-Ultimate/bruitSpecial.mp3"; sourceTree = "<group>"; };
+		AE884D0C2461531B0005F62C /* selectCharacterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectCharacterScreen.swift; sourceTree = "<group>"; };
+		AE884D0E2462D8AA0005F62C /* playScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playScreen.swift; sourceTree = "<group>"; };
+		AE884D122466BCDE0005F62C /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		AEC02D9E2482D6E900B48B14 /* bruitReady.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bruitReady.mp3; path = "../../Musique RPG-Ultimate/bruitReady.mp3"; sourceTree = "<group>"; };
+		AEEF8A4A2457264600E27349 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		AEEF8A5624576D6300E27349 /* mainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE0861AA244B0C5C009C046B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0861C0244B0C5D009C046B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0861CB244B0C5D009C046B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE0861A4244B0C5B009C046B = {
+			isa = PBXGroup;
+			children = (
+				AE0861AF244B0C5C009C046B /* RPG-Ultimate */,
+				AE31F7E724803FF2009A8654 /* Music */,
+				AE0861C6244B0C5D009C046B /* RPG-UltimateTests */,
+				AE0861D1244B0C5D009C046B /* RPG-UltimateUITests */,
+				AE0861AE244B0C5C009C046B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE0861AE244B0C5C009C046B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE0861AD244B0C5C009C046B /* RPG-Ultimate.app */,
+				AE0861C3244B0C5D009C046B /* RPG-UltimateTests.xctest */,
+				AE0861CE244B0C5D009C046B /* RPG-UltimateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE0861AF244B0C5C009C046B /* RPG-Ultimate */ = {
+			isa = PBXGroup;
+			children = (
+				AE0861B0244B0C5C009C046B /* AppDelegate.swift */,
+				AE0861B2244B0C5C009C046B /* SceneDelegate.swift */,
+				AE884D122466BCDE0005F62C /* AppUtility.swift */,
+				AEEF8A4A2457264600E27349 /* Character.swift */,
+				AEEF8A5624576D6300E27349 /* mainScreen.swift */,
+				AE884D0E2462D8AA0005F62C /* playScreen.swift */,
+				AE884D0C2461531B0005F62C /* selectCharacterScreen.swift */,
+				AE3941F224582DEA00D9F1A9 /* optionScreen.swift */,
+				AE0861B6244B0C5C009C046B /* Main.storyboard */,
+				AE0861BB244B0C5D009C046B /* LaunchScreen.storyboard */,
+				AE0861B9244B0C5C009C046B /* Assets.xcassets */,
+				AE0861BE244B0C5D009C046B /* Info.plist */,
+			);
+			path = "RPG-Ultimate";
+			sourceTree = "<group>";
+		};
+		AE0861C6244B0C5D009C046B /* RPG-UltimateTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE0861C7244B0C5D009C046B /* RPG_UltimateTests.swift */,
+				AE0861C9244B0C5D009C046B /* Info.plist */,
+			);
+			path = "RPG-UltimateTests";
+			sourceTree = "<group>";
+		};
+		AE0861D1244B0C5D009C046B /* RPG-UltimateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE0861D2244B0C5D009C046B /* RPG_UltimateUITests.swift */,
+				AE0861D4244B0C5D009C046B /* Info.plist */,
+			);
+			path = "RPG-UltimateUITests";
+			sourceTree = "<group>";
+		};
+		AE31F7E724803FF2009A8654 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				AEC02D9E2482D6E900B48B14 /* bruitReady.mp3 */,
+				AE6688A42482623200B821F7 /* bruitSpecial.mp3 */,
+				AE19292024825D5900A3866B /* bruitBegin.mp3 */,
+				AE19291E2482556D00A3866B /* bruitHache.mp3 */,
+				AE19291C2482539A00A3866B /* bruitWin.mp3 */,
+				AE1A8AD32481677E0074A677 /* audio-selectCharacter.mp3 */,
+				AE1A8AC924815C9D0074A677 /* audio-main.mp3 */,
+				AE1A8ACB24815C9D0074A677 /* bruitage-claque.mp3 */,
+				AE1A8ACA24815C9D0074A677 /* coup-depee.mp3 */,
+				AE1A8ACF24815F090074A677 /* bruitFleche.mp3 */,
+				AE1A8AD12481620C0074A677 /* bruitAmelioration.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE0861AC244B0C5C009C046B /* RPG-Ultimate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0861D7244B0C5D009C046B /* Build configuration list for PBXNativeTarget "RPG-Ultimate" */;
+			buildPhases = (
+				AE0861A9244B0C5C009C046B /* Sources */,
+				AE0861AA244B0C5C009C046B /* Frameworks */,
+				AE0861AB244B0C5C009C046B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RPG-Ultimate";
+			productName = "RPG-Ultimate";
+			productReference = AE0861AD244B0C5C009C046B /* RPG-Ultimate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE0861C2244B0C5D009C046B /* RPG-UltimateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0861DA244B0C5D009C046B /* Build configuration list for PBXNativeTarget "RPG-UltimateTests" */;
+			buildPhases = (
+				AE0861BF244B0C5D009C046B /* Sources */,
+				AE0861C0244B0C5D009C046B /* Frameworks */,
+				AE0861C1244B0C5D009C046B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0861C5244B0C5D009C046B /* PBXTargetDependency */,
+			);
+			name = "RPG-UltimateTests";
+			productName = "RPG-UltimateTests";
+			productReference = AE0861C3244B0C5D009C046B /* RPG-UltimateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE0861CD244B0C5D009C046B /* RPG-UltimateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0861DD244B0C5D009C046B /* Build configuration list for PBXNativeTarget "RPG-UltimateUITests" */;
+			buildPhases = (
+				AE0861CA244B0C5D009C046B /* Sources */,
+				AE0861CB244B0C5D009C046B /* Frameworks */,
+				AE0861CC244B0C5D009C046B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0861D0244B0C5D009C046B /* PBXTargetDependency */,
+			);
+			name = "RPG-UltimateUITests";
+			productName = "RPG-UltimateUITests";
+			productReference = AE0861CE244B0C5D009C046B /* RPG-UltimateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE0861A5244B0C5B009C046B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Mateo Lelong";
+				TargetAttributes = {
+					AE0861AC244B0C5C009C046B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					AE0861C2244B0C5D009C046B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = AE0861AC244B0C5C009C046B;
+					};
+					AE0861CD244B0C5D009C046B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = AE0861AC244B0C5C009C046B;
+					};
+				};
+			};
+			buildConfigurationList = AE0861A8244B0C5B009C046B /* Build configuration list for PBXProject "RPG-Ultimate" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE0861A4244B0C5B009C046B;
+			productRefGroup = AE0861AE244B0C5C009C046B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE0861AC244B0C5C009C046B /* RPG-Ultimate */,
+				AE0861C2244B0C5D009C046B /* RPG-UltimateTests */,
+				AE0861CD244B0C5D009C046B /* RPG-UltimateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE0861AB244B0C5C009C046B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1A8AD42481677E0074A677 /* audio-selectCharacter.mp3 in Resources */,
+				AEC02D9F2482D6EA00B48B14 /* bruitReady.mp3 in Resources */,
+				AE1A8ACC24815C9D0074A677 /* audio-main.mp3 in Resources */,
+				AE1A8ACD24815C9D0074A677 /* coup-depee.mp3 in Resources */,
+				AE19292124825D5900A3866B /* bruitBegin.mp3 in Resources */,
+				AE1A8AD024815F090074A677 /* bruitFleche.mp3 in Resources */,
+				AE0861BD244B0C5D009C046B /* LaunchScreen.storyboard in Resources */,
+				AE0861BA244B0C5C009C046B /* Assets.xcassets in Resources */,
+				AE19291D2482539A00A3866B /* bruitWin.mp3 in Resources */,
+				AE1A8AD22481620C0074A677 /* bruitAmelioration.mp3 in Resources */,
+				AE1A8ACE24815C9D0074A677 /* bruitage-claque.mp3 in Resources */,
+				AE19291F2482556D00A3866B /* bruitHache.mp3 in Resources */,
+				AE6688A52482623200B821F7 /* bruitSpecial.mp3 in Resources */,
+				AE0861B8244B0C5C009C046B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0861C1244B0C5D009C046B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0861CC244B0C5D009C046B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE0861A9244B0C5C009C046B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0861B1244B0C5C009C046B /* AppDelegate.swift in Sources */,
+				AE884D0F2462D8AA0005F62C /* playScreen.swift in Sources */,
+				AE884D132466BCDE0005F62C /* AppUtility.swift in Sources */,
+				AE3941F324582DEA00D9F1A9 /* optionScreen.swift in Sources */,
+				AEEF8A5724576D6300E27349 /* mainScreen.swift in Sources */,
+				AE884D0D2461531B0005F62C /* selectCharacterScreen.swift in Sources */,
+				AEEF8A4B2457264600E27349 /* Character.swift in Sources */,
+				AE0861B3244B0C5C009C046B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0861BF244B0C5D009C046B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0861C8244B0C5D009C046B /* RPG_UltimateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0861CA244B0C5D009C046B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0861D3244B0C5D009C046B /* RPG_UltimateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE0861C5244B0C5D009C046B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0861AC244B0C5C009C046B /* RPG-Ultimate */;
+			targetProxy = AE0861C4244B0C5D009C046B /* PBXContainerItemProxy */;
+		};
+		AE0861D0244B0C5D009C046B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0861AC244B0C5C009C046B /* RPG-Ultimate */;
+			targetProxy = AE0861CF244B0C5D009C046B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE0861B6244B0C5C009C046B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0861B7244B0C5C009C046B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE0861BB244B0C5D009C046B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0861BC244B0C5D009C046B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE0861D5244B0C5D009C046B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE0861D6244B0C5D009C046B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE0861D8244B0C5D009C046B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BNH52S52F;
+				INFOPLIST_FILE = "RPG-Ultimate/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-Appli.RPG-Ultimate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE0861D9244B0C5D009C046B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BNH52S52F;
+				INFOPLIST_FILE = "RPG-Ultimate/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-Appli.RPG-Ultimate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE0861DB244B0C5D009C046B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RPG-UltimateTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-Appli.RPG-UltimateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPG-Ultimate.app/RPG-Ultimate";
+			};
+			name = Debug;
+		};
+		AE0861DC244B0C5D009C046B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RPG-UltimateTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-Appli.RPG-UltimateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPG-Ultimate.app/RPG-Ultimate";
+			};
+			name = Release;
+		};
+		AE0861DE244B0C5D009C046B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RPG-UltimateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-Appli.RPG-UltimateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RPG-Ultimate";
+			};
+			name = Debug;
+		};
+		AE0861DF244B0C5D009C046B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RPG-UltimateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-Appli.RPG-UltimateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RPG-Ultimate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE0861A8244B0C5B009C046B /* Build configuration list for PBXProject "RPG-Ultimate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0861D5244B0C5D009C046B /* Debug */,
+				AE0861D6244B0C5D009C046B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0861D7244B0C5D009C046B /* Build configuration list for PBXNativeTarget "RPG-Ultimate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0861D8244B0C5D009C046B /* Debug */,
+				AE0861D9244B0C5D009C046B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0861DA244B0C5D009C046B /* Build configuration list for PBXNativeTarget "RPG-UltimateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0861DB244B0C5D009C046B /* Debug */,
+				AE0861DC244B0C5D009C046B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0861DD244B0C5D009C046B /* Build configuration list for PBXNativeTarget "RPG-UltimateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0861DE244B0C5D009C046B /* Debug */,
+				AE0861DF244B0C5D009C046B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE0861A5244B0C5B009C046B /* Project object */;
+}
