@@ -2,7 +2,7 @@
 //  playScreen.swift
 //  RPG-Ultimate
 //
-//  Created by laurent lelong on 06/05/2020.
+//  Created by Mateo lelong on 06/05/2020.
 //  Copyright © 2020 Mateo Lelong. All rights reserved.
 //
 
@@ -41,7 +41,9 @@ class playScreen : UIViewController {
     @IBOutlet weak var IconEndormis2: UIImageView!
     @IBOutlet weak var IconBouclier2: UIImageView!
     @IBOutlet weak var IconPoison2: UIImageView!
-        //For the interraction
+    @IBOutlet weak var IsUsedIndicator1: UILabel!
+    @IBOutlet weak var IsUsedIndicator2: UILabel!
+    //For the interraction
     @IBOutlet weak var InterractionToUser1: UITextView!
     @IBOutlet weak var InterractionToUser2: UITextView!
     //Initialization music things
@@ -144,6 +146,7 @@ class playScreen : UIViewController {
         dammage2Script.text = " Dommage : \(dammage2)"
         PasseSonTour1 = false
         PasseSonTour2 = false
+        loadLabelIndicator()
         //Loading accessibility
         ScreenUser1.isUserInteractionEnabled = true
         ScreenUser2.isUserInteractionEnabled = false
@@ -338,6 +341,129 @@ class playScreen : UIViewController {
             IconEndormis2.isHidden = true
         }
     }
+    //Indicator ISUsed Label
+    func loadLabelIndicator() {
+        switch classe1 {
+        case "Guerrier":
+            if IsUsedGuerrier1 == 0 {
+                IsUsedIndicator1.text = ""
+            }
+            else {
+               IsUsedIndicator1.text = "\(IsUsedGuerrier1) x"
+            }
+        case "Archer":
+            if IsUsedArcher1 == 0 {
+                IsUsedIndicator1.text = ""
+            }
+            else {
+                IsUsedIndicator1.text = "\(IsUsedArcher1) x"
+            }
+        case "Mage":
+            if IsUsedMage1 == 0 {
+            IsUsedIndicator1.text = ""
+            }
+            else {
+                IsUsedIndicator1.text = "\(IsUsedMage1) x"
+            }
+        case "Ninja":
+            if IsUsedNinja1 == 0 {
+                IsUsedIndicator1.text = ""
+            }
+            else {
+                IsUsedIndicator1.text = "\(IsUsedNinja1) x"
+            }
+        case "Assassin":
+            if IsUsedAssassin1 == 0 {
+                IsUsedIndicator1.text = ""
+            }
+            else {
+                IsUsedIndicator1.text = "\(IsUsedAssassin1) x"
+            }
+        case "Geant":
+            if IsUsedGeant1 == 0 {
+                IsUsedIndicator1.text = ""
+            }
+            else {
+                IsUsedIndicator1.text = "\(IsUsedGeant1) x"
+            }
+        case "Gobelin":
+            if IsUsedGobelin1 == 0 {
+                IsUsedIndicator1.text = ""
+            }
+            else {
+                IsUsedIndicator1.text = "\(IsUsedGobelin1) x"
+            }
+        case "Viking":
+            if IsUsedViking1 == 0 {
+                IsUsedIndicator1.text = ""
+            }
+            else {
+                IsUsedIndicator1.text = "\(IsUsedViking1) x"
+            }
+        default:
+            IsUsedIndicator1.text = ""
+        }
+        switch classe2 {
+        case "Guerrier":
+            if IsUsedGuerrier2 == 0 {
+                IsUsedIndicator2.text = ""
+            }
+            else {
+               IsUsedIndicator2.text = "\(IsUsedGuerrier2) x"
+            }
+        case "Archer":
+            if IsUsedArcher2 == 0 {
+                IsUsedIndicator2.text = ""
+            }
+            else {
+                IsUsedIndicator2.text = "\(IsUsedArcher2) x"
+            }
+        case "Mage":
+            if IsUsedMage2 == 0 {
+            IsUsedIndicator2.text = ""
+            }
+            else {
+                IsUsedIndicator2.text = "\(IsUsedMage2) x"
+            }
+        case "Ninja":
+            if IsUsedNinja2 == 0 {
+                IsUsedIndicator2.text = ""
+            }
+            else {
+                IsUsedIndicator2.text = "\(IsUsedNinja2) x"
+            }
+        case "Assassin":
+            if IsUsedAssassin2 == 0 {
+                IsUsedIndicator2.text = ""
+            }
+            else {
+                IsUsedIndicator2.text = "\(IsUsedAssassin2) x"
+            }
+        case "Geant":
+            if IsUsedGeant2 == 0 {
+                IsUsedIndicator2.text = ""
+            }
+            else {
+                IsUsedIndicator2.text = "\(IsUsedGeant2) x"
+            }
+        case "Gobelin":
+            if IsUsedGobelin2 == 0 {
+                IsUsedIndicator2.text = ""
+            }
+            else {
+                IsUsedIndicator2.text = "\(IsUsedGobelin2) x"
+            }
+        case "Viking":
+            if IsUsedViking2 == 0 {
+                IsUsedIndicator2.text = ""
+            }
+            else {
+                IsUsedIndicator2.text = "\(IsUsedViking2) x"
+            }
+        default:
+            IsUsedIndicator2.text = ""
+        }
+    }
     //Interraction for actions of User 1 and 2
     //
     //User 1
@@ -422,7 +548,6 @@ class playScreen : UIViewController {
             VerificationFlechetteGobelin2()
             //others
             round = round + 1
-            VerifyingIcons()
         }
         else if TourUser == 2 { //Si c'est le Tour du Joueur 2
             //Passives
@@ -433,7 +558,6 @@ class playScreen : UIViewController {
             VerificationFlechetteGobelin1()
             //others
             round = round + 1
-            VerifyingIcons()
         }
     }
     //Controll of the acess controll of rounds
@@ -477,6 +601,10 @@ class playScreen : UIViewController {
     //
     //function for the reloading of the values every round
     func LoadValues() {
+        //IsUsedIndicator
+        loadLabelIndicator()
+        //Icons
+        VerifyingIcons()
         //User 1
             //Graphic (storyboard)
         hp1Graphic.value = hp1
@@ -1169,6 +1297,7 @@ class playScreen : UIViewController {
     func VerificationPassifGobelin1 () {
         //Le passif du joueur 1
         if (classe1 == "Gobelin") && (hp1 <= 40) && (PassifGobelin1 == true) {
+            IconEpee1.isHidden = false
             InterractionToUser1.text = "Vous etes enragé, vous volez l'attaque de votre adverssaire et l'aditionnez à la votre !"
             dammage1 = dammage2 + dammage1
             PassifGobelin1 = false
@@ -1180,17 +1309,16 @@ class playScreen : UIViewController {
     func VerificationPassifGobelin2 () {
         //Le passif du joueur 2
         if (classe2 == "Gobelin") && (hp2 <= 40) && (PassifGobelin2 == true) {
+            IconEpee2.isHidden = false
             InterractionToUser2.text = "Vous etes enragé, vous volez l'attaque de votre adverssaire et l'aditionnez à la votre !"
             dammage2 = dammage1 + dammage2
             PassifGobelin2 = false
-        }
-        else {
-            return
         }
     }
     //Verification du passif du User 1 si classe Viking
     func VerificationPassifViking1 () {
         if (classe1 == "Viking") && (dammage2 >= 35) && (PassifViking1 == true) {
+            IconEpee1.isHidden = false
             dammage1 = dammage1 * 1.5
             PassifViking1 = false
             InterractionToUser1.text = "Hache de Guerre activée , Vos dommages sont multipliés par 1.5"
@@ -1198,6 +1326,7 @@ class playScreen : UIViewController {
     }
     func VerificationPassifViking2 () {
         if (classe2 == "Viking") && (dammage1 >= 35) && (PassifViking2 == true) {
+            IconEpee2.isHidden = false
             dammage2 = dammage2 * 1.5
             PassifViking2 = false
             InterractionToUser2.text = "Hache de Guerre activée , Vos dommages sont multipliés par 1.5"

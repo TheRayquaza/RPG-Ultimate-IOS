@@ -31,13 +31,13 @@ var RoundActuel1 : Int = 0
 var RoundActuel2 : Int = 0
 //Les passifs
 //User 1
-var TranquilissantArcher1 : Float = Float.random(in : 0...100)
+var TranquilissantArcher1 : Float = 100
 var gainHpMage1 : Float = Float.random(in : 0...100)
 var EsquiveNinja1 : Float = Float.random(in: 0...100)
 var PassifGobelin1 : Bool = true
 var PassifViking1 : Bool = true
 //User 2
-var TranquilissantArcher2 : Float = Float.random(in : 0...100)
+var TranquilissantArcher2 : Float = 100
 var gainHpMage2 : Float = Float.random(in : 0...100)
 var EsquiveNinja2 : Float = Float.random(in: 0...100)
 var PassifGobelin2 : Bool = true

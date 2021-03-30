@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  RPG-Ultimate
 //
-//  Created by laurent lelong on 18/04/2020.
+//  Created by Mateo lelong on 18/04/2020.
 //  Copyright © 2020 Mateo Lelong. All rights reserved.
 //
 

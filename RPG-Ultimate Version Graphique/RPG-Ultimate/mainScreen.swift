@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import UserNotifications
 
 class mainScreen : UIViewController {
     
@@ -17,6 +18,21 @@ class mainScreen : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Notification
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+        }
+        let content = UNMutableNotificationContent()
+        content.title = "Come play with us !"
+        content.body = "We don't see you today ! Why not play a game with your favorite character"
+        let date = Date().addingTimeInterval(86400)
+        let dateComponents = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+        let uuidString = UUID().uuidString
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        center.add(request) { (error) in
+        }
+        //Music
         do {
             mainAudio = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "audio-main", ofType: "mp3")!))
             mainAudio.prepareToPlay()
